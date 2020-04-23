@@ -34,8 +34,7 @@ modules:
       - type: git
         url: https://github.com/projectestac/jclic/
         branch: master
-        commit: 36f12ed96277db575fd6f56deac794fdc6be538f
-        
+        commit: f58121a8f5b357f22c2da664ccdd47c6d0cecd5d        
         # Fetch project.
       - type: archive
         url: https://clic.xtec.cat/dist/jclic/jclic-0.3.2.12.zip
