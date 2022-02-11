@@ -1,6 +1,6 @@
 app-id: cat.xtec.clic.JClic
 runtime: org.freedesktop.Platform
-runtime-version: '19.08'
+runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk11
@@ -34,11 +34,11 @@ modules:
       - type: git
         url: https://github.com/projectestac/jclic/
         branch: master
-        commit: f58121a8f5b357f22c2da664ccdd47c6d0cecd5d        
+        commit: 3fb01755a9fa8e6ff53045dea293ddc0c13baf52        
         # Fetch project.
       - type: archive
-        url: https://clic.xtec.cat/dist/jclic/jclic-0.3.2.12.zip
-        sha256: 6653e0d9bc29de8d03247095a90346e7ae204121682d2a587e762ed317d09875    
+        url: https://clic.xtec.cat/dist/jclic/jclic-0.3.2.16.zip
+        sha256: f8a6cfd1e73fca10fe996da720a445aff578d44819a41e46ab4496ea5500b550    
         strip-components: 0
 
       # Setting flatpakisms
