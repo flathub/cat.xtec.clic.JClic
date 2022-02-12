@@ -33,7 +33,6 @@ modules:
 
       - type: git
         url: https://github.com/projectestac/jclic/
-        branch: master
         commit: 3fb01755a9fa8e6ff53045dea293ddc0c13baf52        
         # Fetch project.
       - type: archive
