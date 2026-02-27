@@ -1,9 +1,9 @@
 app-id: cat.xtec.clic.JClic
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.openjdk11
+  - org.freedesktop.Sdk.Extension.openjdk17
 command: jclic
 
 finish-args:
@@ -20,12 +20,12 @@ finish-args:
 
 build-options:
     env:
-        JAVA_HOME: /usr/lib/sdk/openjdk11/
+        JAVA_HOME: /usr/lib/sdk/openjdk17/
 modules:
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - /usr/lib/sdk/openjdk11/install.sh
+      - /usr/lib/sdk/openjdk17/install.sh
 
   - name: jclic
     no-autogen: true
@@ -37,13 +37,15 @@ modules:
         # Fetch project.
       - type: archive
         url: https://clic.xtec.cat/dist/jclic/jclic-0.3.2.17.zip
-        sha256: a59b6fcd55a7b22c34015c8b2fe5eca9f101c74e457363acf3a11fc5f126c1bc    
+        sha256: 72f6f3dcba29f03e74178595e4c2c930e9af32d30e9f1f322d8ab2424c6d66a8
         strip-components: 0
 
       # Setting flatpakisms
       - type: patch
         path: flatpak-cat.xtec.clic.JClic.patch
         strip-components: 0
+      - type: patch
+        path: fix-appdata.patch
 
     buildsystem: simple
     build-commands: 

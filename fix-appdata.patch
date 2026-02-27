@@ -1,0 +1,39 @@
+From fa2c754b60e2268e135f1099c1dba8e41a4a9ef5 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Sabri=20=C3=9Cnal?= <yakushabb@gmail.com>
+Date: Sun, 22 Feb 2026 22:34:47 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+---
+ dist/linux/cat.xtec.clic.JClic.metainfo.xml | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+diff --git a/dist/linux/cat.xtec.clic.JClic.metainfo.xml b/dist/linux/cat.xtec.clic.JClic.metainfo.xml
+index a52e5d7..d827ced 100644
+--- a/dist/linux/cat.xtec.clic.JClic.metainfo.xml
++++ b/dist/linux/cat.xtec.clic.JClic.metainfo.xml
+@@ -41,17 +41,18 @@
+       <category>Java</category>
+    </categories>
+ 
+-   <mimetypes>
+-      <mimetype>application/jclic</mimetype>
+-   </mimetypes>
++   <provides>
++      <mediatype>application/jclic</mediatype>
++   </provides>
+ 
+    <url type="homepage">https://clic.xtec.cat</url>
+    <url type="bugtracker">https://github.com/projectestac/jclic/issues</url>
++   <url type="vcs-browser">https://github.com/projectestac/jclic</url>
+    <url type="faq">https://clic.xtec.cat/en/jclic/faqjclic.htm</url>
+    <url type="help">https://clic.xtec.cat/en/com/index.html</url>
+    <url type="translate">https://translations.launchpad.net/jclic</url>
+    <url type="contact">https://clic.xtec.cat/en/com/bustia.htm</url>
+-   <developer_name>Francesc Busquets</developer_name>
++   <developer id="cat.xtec"><name>Francesc Busquets</name></developer>
+    <update_contact>fbusquets@xtec.cat</update_contact>
+    <project_group>Projectes TAC, Catalonia Department of Education - ICT in Education Unit</project_group>
+ 
+-- 
+2.53.0
+
